@@ -10,13 +10,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBG2fUfWaTcjTFmE4sdkTKGT5Y5TzpdLzI",
-  authDomain: "chat2-248bb.firebaseapp.com",
-  projectId: "chat2-248bb",
-  storageBucket: "chat2-248bb.appspot.com",
-  messagingSenderId: "9672186652",
-  appId: "1:9672186652:web:8977f21f42971af3d4b8d9",
-  measurementId: "G-QK8H61BR35"
+  apiKey: "AIzaSyA-58NtzTK3WsAyg96rNFN_pCkhC8XFckU",
+  authDomain: "chating-77b52.firebaseapp.com",
+  projectId: "chating-77b52",
+  storageBucket: "chating-77b52.appspot.com",
+  messagingSenderId: "1002513262865",
+  appId: "1:1002513262865:web:1604ab57d91f45725a84b0",
+  measurementId: "G-2F5KPBCT0F"
 })
 
 const auth = firebase.auth();
@@ -31,11 +31,13 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <img src='logo.png' />
+        <h3>Huriat Sabawoon personal Private Chat App  🔥💬</h3>
         <SignOut />
       </header>
 
       <section>
+        <h3 style={{ color: 'white' }}>Only Three VIP People Can Chat Here!</h3>
         {user ? <ChatRoom /> : <SignIn />}
       </section>
 
